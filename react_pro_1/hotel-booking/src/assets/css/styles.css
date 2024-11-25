@@ -1,0 +1,97 @@
+/* Apply the background image to the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('C:\Users\Dilshan\Documents\REact\reactpro1\hotel-booking\src\assets\images\a.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Booking form styles */
+.booking-form {
+  max-width: 500px;
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Make the form semi-transparent */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-book-now {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-book-now:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  body {
+    padding: 0;
+  }
+
+  .booking-form {
+    margin: 0 10px; /* Add some margin to avoid touching the edges */
+    padding: 20px; /* Padding for the form */
+  }
+
+  .btn-book-now {
+    font-size: 14px; /* Adjust button size */
+    padding: 10px; /* Adjust button padding */
+  }
+
+  /* Add other styles you want to change for mobile */
+}
+
+/* Tablet Styles */
+@media (min-width: 577px) and (max-width: 768px) {
+  .booking-form {
+    margin: 0 20px; /* Adjust margin for tablet */
+  }
+}
